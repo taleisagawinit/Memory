@@ -1,0 +1,260 @@
+html {box-sizing: border-box;} 
+*, *::before, *::after {box-sizing:inherit; padding: 0; margin: 0;}
+
+    body {
+        background: url('https://ih1.redbubble.net/image.247689419.5563/flat,750x,075,f-pad,750x1000,f8f8f8.jpg');
+        display: flex;
+        flex-wrap: wrap;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .main {
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border: 5px solid white;
+        border-radius: 5px;
+        background: orange;
+        width: 1100px;
+        height: 650px;
+        position: relative;
+        font-family: 'Cutive Mono', monospace;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        
+        -webkit-perspective: 800px;
+        -moz-perspective: 800px;
+        -o-perspective: 800px;
+        perspective: 800px;
+    }
+
+    .win {
+        display: none;
+    }
+
+
+    .start {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 42px;
+        padding-top: 100px;
+        letter-spacing: -3px;
+    }
+
+    .start img{
+        width: 500px;
+    }
+
+    #intro {
+        padding-top: 20px;
+        font-size: 24px;
+        width: 700px;
+        margin: auto;
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    #button {
+        width: 250px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    #startbutton span {
+        font-size: 28px;
+    }
+
+    #startbutton {
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0;
+        font-size: 36px;
+        line-height: 35px;
+        width: 115px;
+        height: 80px;
+        background: white;
+        text-align: left;
+        position: relative;
+        left: 430px;
+        bottom: 110px;
+        background: orange;
+    }
+
+    .lose {
+        background:orange;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+        padding-top: 175px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .lose p {
+        font-size: 80px;
+        position: relative;
+        bottom: 200px;
+        left: 320px;
+        text-align: left;
+        background: orange;
+        width: 220px;
+        line-height: 75px;
+    }
+
+    .lose span{
+        font-size: 62px;
+    } 
+
+    .lose img{
+        width: 500px;
+    }
+
+    .gray {
+        filter: grayscale(100%);
+    }
+
+    .card {
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 190px;
+        width:160px;
+        margin: 5px;
+        display: flex;
+        cursor: pointer;
+       
+
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition: -moz-transform 1s;
+        -o-transition: -o-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 50% 50%;
+    }
+
+    .card div {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .front, .back {
+        width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 5px;  
+    }
+
+    .back {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwTmdh4bWCNEQhpw-GvkWNZle0U3pU97Zfni5p_qq3ZEzMsTS');
+        background-size: contain;
+        background-position-x: center;
+    }
+
+    .front {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .front h3 {
+        background: orange;
+        width: 85px;
+        margin-top: 140px;
+    }
+
+
+    .flipped {
+        transform: rotateY(180deg);
+    }
+
+
+    aside {
+        background: white;
+        border-radius: 5px;
+        border: 5px solid orange;
+        margin: auto;
+        padding: 10px 0;
+        width: 1100px;
+        bottom: 25px;
+        text-align: center;
+    }
+
+    aside img {
+        margin: 0 2px;
+        height: 75px;
+        width: 50px;
+        filter: grayscale(100%);
+    }
+
+    .toby {
+        filter: grayscale(0);
+        transition: filter 1s;
+    }
+
+
+
+
+
+    div[class*="Michael"] {
+        background-image: url('https://imgix.bustle.com/2017/4/27/c5576501-1a7a-43b8-b5e4-9f0aed1083e0.jpg');
+        background-position-x: 75%;
+    }
+
+    div[class*="Dwight"] {
+        background-image: url('https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/Dwight-Schrute-Rainn-Wilson-in-The-Office.jpg');
+        background-position-x: 25%;
+        }
+    
+    div[class*="Pam"] {
+        background-image: url('https://brobible.files.wordpress.com/2018/10/best-of-pam-beasley-the-office-supercut.jpg?quality=90&w=650&h=427');
+        background-position-x: 85%;
+        }
+    
+    div[class*="Jim"] {
+        background-image: url('https://socialnewsdaily.com/wp-content/uploads/2018/07/rsz_014.jpg');
+        }
+
+    
+    div[class*="Stanley"] {
+        background-image: url('https://i.pinimg.com/originals/90/2e/48/902e48fe3e0a0397fc3071eed941332f.jpg');
+        }
+    
+    div[class*="Kevin"] {
+        background-image: url('https://vignette.wikia.nocookie.net/theoffice/images/e/ec/Kevin3.jpg/revision/latest/scale-to-width-down/220?cb=20140726053223');
+        background-position-x: 15%;
+        }
+    
+    div[class*="Angela"] {
+        background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.hellogiggles.com%2Fuploads%2F2016%2F09%2F26085918%2Fangela-the-office-brown-sweater.jpg&w=650&c=sc&poi=face&q=85');
+        background-position: center left;
+        }
+    
+    div[class*="Ryan"] {
+        background-image: url('https://vignette.wikia.nocookie.net/theoffice/images/e/e0/Ryan2.jpg/revision/latest/scale-to-width-down/197?cb=20140726043954');
+        }
+    
+    div[class*="Kelly"] {
+        background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2014-09/18/18/campaign_images/webdr08/26-truths-kelly-kapoor-taught-us-about-winning-at-1-18358-1411080204-7_big.jpg');
+        background-position-x: 25%;
+        }
+
+    
