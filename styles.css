@@ -5,8 +5,19 @@ html {box-sizing: border-box;}
         background: url('https://ih1.redbubble.net/image.247689419.5563/flat,750x,075,f-pad,750x1000,f8f8f8.jpg');
         display: flex;
         flex-wrap: wrap;
-        background-size: contain;
+        background-size: 50%;
+        /* background-repeat: no-repeat; */
         background-position: center;
+    }
+
+    body::before {
+        content: "";
+        width:100%;
+        height:100%;
+        background: #000000;
+        opacity: 0.7;
+        z-index: -1;
+        position: absolute;
     }
 
     .main {

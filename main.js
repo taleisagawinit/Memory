@@ -62,7 +62,7 @@ $(document).ready(() => {
     function start(){
     return `
         <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/The_Office_US_logo.svg/1280px-The_Office_US_logo.svg.png">
+            <img src="./heading-logo.png">
             <p>Memory Game</p>
             <ul id="intro">
                 <li>Click a card to reveal it and find its matching pair</li> 
@@ -70,7 +70,7 @@ $(document).ready(() => {
                 <li>Match all cards in 20 Toby's or less to win</li>
                 <li>The less Toby's the better (obviously)</li>
             </ul>
-            <img id="button" src="http://www.sclance.com/pngs/the-office-png/the_office_png_1372131.png">
+            <img id="button" src="./office-logo.png">
             <p id="startbutton">
                 <span>Start</span> <br> <strong>Game</strong>
             </p>
@@ -81,7 +81,7 @@ $(document).ready(() => {
     function lose(either) {
         return `
         <div>
-            <img src="http://www.sclance.com/pngs/the-office-png/the_office_png_1372131.png">
+            <img src="./office-logo.png">
             <p id="loser">
                 <span>You</span> <br> <strong>${either}</strong>
             </p>
